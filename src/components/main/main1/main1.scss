@@ -1,0 +1,53 @@
+@import "/src/assets/styles/variables.scss";
+
+
+.structure_one{
+    margin: 10px 10rem;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    &_image {
+        margin-right: 22vw;
+        max-width: 800px;
+        &_figure{
+            width: 100%;
+            height: 100%;
+            & img {
+                object-fit: fill;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &_text{
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 8vw;
+        padding: 0px 0px 0px 4.5vw;
+        width: 40%;
+        max-width: 700px;
+        min-width: 100px;
+        height: 63%;
+        display: flex;
+        flex-direction:  column;
+        gap: 20px;
+        justify-content: flex-end;
+        & h3 {
+            font-family: $font-josefin-sans;
+            text-transform: uppercase;
+            font-size: 2.3vw;
+        }
+        & span{
+           font-family: $font-alata; 
+           color: $font-body-color;
+           font-size: .9vw;
+            line-height: 23px;
+        }
+    }
+}
+@media (max-width: 800px){
+
+}
