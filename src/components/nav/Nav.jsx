@@ -23,7 +23,7 @@ const Nav = ({ setMenuMobileActive }) => {
     const handleDesktopMenu = () => {
         const windowWidth = window.innerWidth;
 
-        if (windowWidth > 415) {
+        if (windowWidth > 600) {
             setDesktopMenu(true)
         } else {
             setDesktopMenu(false)
@@ -53,7 +53,12 @@ const Nav = ({ setMenuMobileActive }) => {
                 </button>
                 <ul className={showDesktopMenu ? "nav__desktop-menu" : "nav__desktop-menu hidden"}>
                     {
-                        menu.map((item, index) => (<li key={index + 1}>{item}</li>))
+                        menu.map((item, index) => (
+                            <li key={index + 1} className="nav__desktop-menu__item" >
+                                <p>{item}</p>
+                                <hr className="nav__desktop-menu__item__line"/>
+                            </li>
+                        ))
                     }
                 </ul>
                 <section className={showMobileMenu ? "nav__mobile-menu" : "nav__mobile-menu hidden"}>

@@ -10,7 +10,10 @@
     align-items: center;
     
     justify-content: space-between;
-    
+    &__logo-container {
+        display: flex;
+    }
+
     &__open-mobile-menu {
         @include buttons()
     }
@@ -46,8 +49,62 @@
         }
     }
 
+    &__desktop-menu__item__line {
+        visibility: hidden;
+    }
+
 }
 
+
+@media screen and (min-width: 600px) {
+    .nav {
+        &__desktop-menu {
+            display: flex;
+            list-style: none;
+            gap: 0.7rem;
+            &__item {
+                color: white;
+                font-family: $font-alata;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .nav {
+
+        &__logo {
+            cursor: pointer;
+        }
+
+        &__desktop-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            &__item {
+                font-size: 1.1rem;
+
+                p {
+                    margin-bottom: 0.5rem;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:hover &__line {
+                    visibility: visible;
+                    width: 40%;
+                    border: 1px solid white;
+                    border-bottom: none;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
 .hidden {
-    display: none;
+    display: none; 
 }
