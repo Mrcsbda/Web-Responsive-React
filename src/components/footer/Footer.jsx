@@ -11,7 +11,7 @@ const Footer = () => {
         <h3>loopstudios</h3>
         <ul>
           {
-            list.map((item, index) => (<li key={index + 1}>{item}</li>))
+            list.map((item, index) => (<li key={index + 1}>{item} <hr></hr></li>))
 
           }
         </ul>

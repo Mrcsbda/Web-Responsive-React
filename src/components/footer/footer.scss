@@ -31,12 +31,21 @@ section {
       gap: 20px;
 
       & li {
-        border-bottom: 2px solid black;
-        padding-bottom: 5px;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        & hr {
+          visibility: hidden;
+          width: 30px;
+          align-self: center;
+        }
 
         &:hover {
-          border-bottom: 2px solid white;
+          & hr {
+            visibility: visible;
+          }
         }
       }
     }
