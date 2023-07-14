@@ -1,0 +1,10 @@
+.main_father{
+    border: 1px blue solid;
+}
+
+@media (max-width: 800px) {
+  .main_father{
+    height: auto;
+
+}
+}
