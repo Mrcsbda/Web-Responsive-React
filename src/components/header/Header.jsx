@@ -1,8 +1,14 @@
 import React from 'react'
+import Nav from '../nav/Nav'
+import Banner from '../banner/Banner'
+import "./header.scss"
 
-const Header = () => {
+const Header = ({setMenuMobileActive}) => {
   return (
-    <div>Header</div>
+    <header className='header'>
+      <Nav setMenuMobileActive={setMenuMobileActive} />
+      <Banner />
+    </header>
   )
 }
 
