@@ -5,6 +5,7 @@
     margin: 10px 3rem;
     display: flex;
     height: 550px;
+    z-index: -1;
     // border: 1px red solid;
     // justify-content: center;
     position: relative;
@@ -58,3 +59,4 @@
         margin-left: 3rem;
     }
 }
+
