@@ -6,7 +6,7 @@ const list = ["About", "Careers", "Events", "Products", "Supports"]
 const Footer = () => {
   return (
 
-    <section>
+    <section className="footer__container">
       <article className="leftSide">
         <h3>loopstudios</h3>
         <ul>
@@ -15,14 +15,6 @@ const Footer = () => {
 
           }
         </ul>
-
-        {/* <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul> */}
 
       </article>
       <article className="rightSide">
