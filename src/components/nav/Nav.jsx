@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import menuIcon from "../../assets/images/icon-hamburger.svg"
-import closeIcon from "../../assets/images/icon-close.svg"
-import logo from "../../assets/images/logo.svg"
+import menuIcon from "/images/icon-hamburger.svg"
+import closeIcon from "/images/icon-close.svg"
+import logo from "/images/logo.svg"
 import "./nav.scss"
 
 const Nav = ({ setMenuMobileActive }) => {

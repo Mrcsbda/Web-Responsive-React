@@ -19,10 +19,10 @@ const Footer = () => {
       </article>
       <article className="rightSide">
         <figure>
-          <img src="src/assets/images/icon-facebook.svg" alt="icon-facebook" />
-          <img src="src/assets/images/icon-twitter.svg" alt="icon-twitter" />
-          <img src="src/assets/images/icon-pinterest.svg" alt="icon-pinterest" />
-          <img src="src/assets/images/icon-instagram.svg" alt="icon-instagram" />
+          <img src="/images/icon-facebook.svg" alt="icon-facebook" />
+          <img src="/images/icon-twitter.svg" alt="icon-twitter" />
+          <img src="/images/icon-pinterest.svg" alt="icon-pinterest" />
+          <img src="/images/icon-instagram.svg" alt="icon-instagram" />
         </figure>
         <p>@ 2021 Loopstudios. All rights reserved.</p>
       </article>
